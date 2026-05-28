@@ -11,4 +11,5 @@ urlpatterns = [
     path("<int:question_id>/delete/", views.delete_question, name="delete"),
     path("search/", views.search, name="search"),
     path("secret/", views.leak_secret, name="secret"),
+    path("crash/", views.crash, name="crash"),
 ]
