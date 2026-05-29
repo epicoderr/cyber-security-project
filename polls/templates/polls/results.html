@@ -2,9 +2,7 @@
 
 <ul>
 {% for choice in question.choice_set.all %}
-<!-- FLAW -->
-<li>{{ choice.choice_text|safe }} — {{ choice.votes }}</li>
-<!-- replace with {{ choice.choice_text }} -->
+<li>{{ choice.choice_text }} — {{ choice.votes }}</li>
 {% endfor %}
 </ul>
 

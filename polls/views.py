@@ -63,5 +63,5 @@ def search(request):
     return HttpResponse(str(results))
 
 def crash(request):
-    # FLAW 4 demonstration: causes Django debug page to expose internal details
+    # FLAW 5 demonstration: causes Django debug page to expose internal details
     raise Exception("Intentional crash to demonstrate DEBUG=True")
